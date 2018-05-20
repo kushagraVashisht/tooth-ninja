@@ -15,6 +15,12 @@
 		611788DB2078B0B000FC8590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611788D92078B0B000FC8590 /* LaunchScreen.storyboard */; };
 		613420D8207B2BED00F3C86A /* SwipeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613420D7207B2BED00F3C86A /* SwipeNode.swift */; };
 		61C7EAFE207FA8710061A469 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C7EAFD207FA8710061A469 /* GameOverScene.swift */; };
+		FDC8401C20B12BF3003522C6 /* lifebar_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC8401620B12BF2003522C6 /* lifebar_1.png */; };
+		FDC8401D20B12BF3003522C6 /* lifebar_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC8401720B12BF2003522C6 /* lifebar_2.png */; };
+		FDC8401E20B12BF3003522C6 /* lifebar_3.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC8401820B12BF2003522C6 /* lifebar_3.png */; };
+		FDC8401F20B12BF3003522C6 /* lifebar_4.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC8401920B12BF2003522C6 /* lifebar_4.png */; };
+		FDC8402020B12BF3003522C6 /* lifebar_5.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC8401A20B12BF2003522C6 /* lifebar_5.png */; };
+		FDC8402120B12BF3003522C6 /* lifebar_nolife.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC8401B20B12BF2003522C6 /* lifebar_nolife.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		611788DC2078B0B000FC8590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		613420D7207B2BED00F3C86A /* SwipeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeNode.swift; sourceTree = "<group>"; };
 		61C7EAFD207FA8710061A469 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		FDC8401620B12BF2003522C6 /* lifebar_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lifebar_1.png; sourceTree = "<group>"; };
+		FDC8401720B12BF2003522C6 /* lifebar_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lifebar_2.png; sourceTree = "<group>"; };
+		FDC8401820B12BF2003522C6 /* lifebar_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lifebar_3.png; sourceTree = "<group>"; };
+		FDC8401920B12BF2003522C6 /* lifebar_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lifebar_4.png; sourceTree = "<group>"; };
+		FDC8401A20B12BF2003522C6 /* lifebar_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lifebar_5.png; sourceTree = "<group>"; };
+		FDC8401B20B12BF2003522C6 /* lifebar_nolife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lifebar_nolife.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 			children = (
 				611788CA2078B0AF00FC8590 /* AppDelegate.swift */,
 				611788D02078B0B000FC8590 /* GameScene.swift */,
+				FDC8401520B12BF2003522C6 /* Health bar */,
 				61C7EAFD207FA8710061A469 /* GameOverScene.swift */,
 				613420D7207B2BED00F3C86A /* SwipeNode.swift */,
 				611788D22078B0B000FC8590 /* GameViewController.swift */,
@@ -71,6 +84,19 @@
 				611788DC2078B0B000FC8590 /* Info.plist */,
 			);
 			path = "tooth-ninja";
+			sourceTree = "<group>";
+		};
+		FDC8401520B12BF2003522C6 /* Health bar */ = {
+			isa = PBXGroup;
+			children = (
+				FDC8401620B12BF2003522C6 /* lifebar_1.png */,
+				FDC8401720B12BF2003522C6 /* lifebar_2.png */,
+				FDC8401820B12BF2003522C6 /* lifebar_3.png */,
+				FDC8401920B12BF2003522C6 /* lifebar_4.png */,
+				FDC8401A20B12BF2003522C6 /* lifebar_5.png */,
+				FDC8401B20B12BF2003522C6 /* lifebar_nolife.png */,
+			);
+			path = "Health bar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,9 +158,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC8401D20B12BF3003522C6 /* lifebar_2.png in Resources */,
+				FDC8402020B12BF3003522C6 /* lifebar_5.png in Resources */,
+				FDC8402120B12BF3003522C6 /* lifebar_nolife.png in Resources */,
+				FDC8401E20B12BF3003522C6 /* lifebar_3.png in Resources */,
 				611788D62078B0B000FC8590 /* Main.storyboard in Resources */,
+				FDC8401C20B12BF3003522C6 /* lifebar_1.png in Resources */,
 				611788D82078B0B000FC8590 /* Assets.xcassets in Resources */,
 				611788DB2078B0B000FC8590 /* LaunchScreen.storyboard in Resources */,
+				FDC8401F20B12BF3003522C6 /* lifebar_4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

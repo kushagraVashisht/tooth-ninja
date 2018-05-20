@@ -20,6 +20,8 @@ struct PhysicsCategory {
 class GameScene: SKScene, SKPhysicsContactDelegate {
     var scoreLabel: SKLabelNode!
     var healthLabel: SKLabelNode!
+    var collided: Bool = false
+    
     
     var score = 0 {
         didSet {
@@ -138,18 +140,33 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         bacteria.run(actionMove)
     }
     
-    func bacteriaCollidesWithTooth(bacteria: SKShapeNode) {
+    func bacteriaCollidesWithTooth(bacteria: SKShapeNode)
+    {
         
-        GameViewController().HealthBar.xScale = CGFloat(200 - health)
         print("Collision: Bacteria-Tooth")
         bacteria.removeFromParent()
-        health -= 25
+        GameViewController.collided = true
+        GameViewController.hitNumber -= GameViewController.hitNumber - 1
+//        if(GameViewController.collided)
+//        {
+//            GameViewController().hitNumberval -= 1
+//            if(GameViewController.hitNumber <= 0)
+//            {
+//                GameViewController.collided = false
+//                GameViewController.hitNumber = 1
+//                exit(1)
+//            }
+//        }
+        print(GameViewController.hitNumber)
+        print(GameViewController.collided)
+//        health -= 25
+        //print(200-(health * 30))
+        //GameViewController().HealthBar.size = CGSize(width: 45, height: 30)
         
-        if (health <= 0) {
-            let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
-            let gameOverScene = GameOverScene(size: self.size, won: false)
-            self.view?.presentScene(gameOverScene, transition: reveal)
-        }
+            
+//            let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
+//            let gameOverScene = GameOverScene(size: self.size, won: false)
+//            self.view?.presentScene(gameOverScene, transition: reveal)
     }
     
     func swipeCollidesWithBacteria(bacteria: SKShapeNode) {
