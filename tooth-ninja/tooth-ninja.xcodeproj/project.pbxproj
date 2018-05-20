@@ -13,6 +13,7 @@
 		611788D62078B0B000FC8590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611788D42078B0B000FC8590 /* Main.storyboard */; };
 		611788D82078B0B000FC8590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 611788D72078B0B000FC8590 /* Assets.xcassets */; };
 		611788DB2078B0B000FC8590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611788D92078B0B000FC8590 /* LaunchScreen.storyboard */; };
+<<<<<<< HEAD
 		613420D8207B2BED00F3C86A /* SwipeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613420D7207B2BED00F3C86A /* SwipeNode.swift */; };
 		61C7EAFE207FA8710061A469 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C7EAFD207FA8710061A469 /* GameOverScene.swift */; };
 		FDC8401C20B12BF3003522C6 /* lifebar_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC8401620B12BF2003522C6 /* lifebar_1.png */; };
@@ -21,6 +22,11 @@
 		FDC8401F20B12BF3003522C6 /* lifebar_4.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC8401920B12BF2003522C6 /* lifebar_4.png */; };
 		FDC8402020B12BF3003522C6 /* lifebar_5.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC8401A20B12BF2003522C6 /* lifebar_5.png */; };
 		FDC8402120B12BF3003522C6 /* lifebar_nolife.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC8401B20B12BF2003522C6 /* lifebar_nolife.png */; };
+=======
+		FDB0A476208A3227000768C5 /* PRFilledPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB0A470208A3227000768C5 /* PRFilledPolygon.m */; };
+		FDB0A477208A3227000768C5 /* PRRatcliffTriangulator.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDB0A472208A3227000768C5 /* PRRatcliffTriangulator.mm */; };
+		FDB0A478208A3227000768C5 /* triangulate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDB0A474208A3227000768C5 /* triangulate.cpp */; };
+>>>>>>> a87c2aaab047ab6d47463f544d899ebe1ed7b28c
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,7 @@
 		611788D72078B0B000FC8590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		611788DA2078B0B000FC8590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		611788DC2078B0B000FC8590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		613420D7207B2BED00F3C86A /* SwipeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeNode.swift; sourceTree = "<group>"; };
 		61C7EAFD207FA8710061A469 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		FDC8401620B12BF2003522C6 /* lifebar_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lifebar_1.png; sourceTree = "<group>"; };
@@ -40,6 +47,15 @@
 		FDC8401920B12BF2003522C6 /* lifebar_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lifebar_4.png; sourceTree = "<group>"; };
 		FDC8401A20B12BF2003522C6 /* lifebar_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lifebar_5.png; sourceTree = "<group>"; };
 		FDC8401B20B12BF2003522C6 /* lifebar_nolife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lifebar_nolife.png; sourceTree = "<group>"; };
+=======
+		FDB0A46F208A3227000768C5 /* PRFilledPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRFilledPolygon.h; sourceTree = "<group>"; };
+		FDB0A470208A3227000768C5 /* PRFilledPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRFilledPolygon.m; sourceTree = "<group>"; };
+		FDB0A471208A3227000768C5 /* PRRatcliffTriangulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRRatcliffTriangulator.h; sourceTree = "<group>"; };
+		FDB0A472208A3227000768C5 /* PRRatcliffTriangulator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PRRatcliffTriangulator.mm; sourceTree = "<group>"; };
+		FDB0A473208A3227000768C5 /* PRTriangulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTriangulator.h; sourceTree = "<group>"; };
+		FDB0A474208A3227000768C5 /* triangulate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = triangulate.cpp; sourceTree = "<group>"; };
+		FDB0A475208A3227000768C5 /* triangulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = triangulate.h; sourceTree = "<group>"; };
+>>>>>>> a87c2aaab047ab6d47463f544d899ebe1ed7b28c
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 		611788BE2078B0AF00FC8590 = {
 			isa = PBXGroup;
 			children = (
+				FDB0A46E208A3227000768C5 /* PRKit copy */,
 				611788C92078B0AF00FC8590 /* tooth-ninja */,
 				611788C82078B0AF00FC8590 /* Products */,
 			);
@@ -86,6 +103,7 @@
 			path = "tooth-ninja";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		FDC8401520B12BF2003522C6 /* Health bar */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +115,20 @@
 				FDC8401B20B12BF2003522C6 /* lifebar_nolife.png */,
 			);
 			path = "Health bar";
+=======
+		FDB0A46E208A3227000768C5 /* PRKit copy */ = {
+			isa = PBXGroup;
+			children = (
+				FDB0A46F208A3227000768C5 /* PRFilledPolygon.h */,
+				FDB0A470208A3227000768C5 /* PRFilledPolygon.m */,
+				FDB0A471208A3227000768C5 /* PRRatcliffTriangulator.h */,
+				FDB0A472208A3227000768C5 /* PRRatcliffTriangulator.mm */,
+				FDB0A473208A3227000768C5 /* PRTriangulator.h */,
+				FDB0A474208A3227000768C5 /* triangulate.cpp */,
+				FDB0A475208A3227000768C5 /* triangulate.h */,
+			);
+			path = "PRKit copy";
+>>>>>>> a87c2aaab047ab6d47463f544d899ebe1ed7b28c
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,10 +209,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				61C7EAFE207FA8710061A469 /* GameOverScene.swift in Sources */,
 				613420D8207B2BED00F3C86A /* SwipeNode.swift in Sources */,
+=======
+				FDB0A478208A3227000768C5 /* triangulate.cpp in Sources */,
+>>>>>>> a87c2aaab047ab6d47463f544d899ebe1ed7b28c
 				611788D12078B0B000FC8590 /* GameScene.swift in Sources */,
+				FDB0A477208A3227000768C5 /* PRRatcliffTriangulator.mm in Sources */,
 				611788D32078B0B000FC8590 /* GameViewController.swift in Sources */,
+				FDB0A476208A3227000768C5 /* PRFilledPolygon.m in Sources */,
 				611788CB2078B0AF00FC8590 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,7 +363,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "tooth-ninja/Info.plist";
+<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+>>>>>>> a87c2aaab047ab6d47463f544d899ebe1ed7b28c
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.something.tooth-ninja";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -341,7 +383,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "tooth-ninja/Info.plist";
+<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+>>>>>>> a87c2aaab047ab6d47463f544d899ebe1ed7b28c
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.something.tooth-ninja";
 				PRODUCT_NAME = "$(TARGET_NAME)";
