@@ -43,7 +43,7 @@ class GameViewController: UIViewController
         super.viewDidLoad()
         let longPressGestRecg = UILongPressGestureRecognizer(target: self, action: #selector(openMenu(press:)))
         longPressGestRecg.minimumPressDuration = 3.0
-        
+        menuView.addGestureRecognizer(longPressGestRecg)
         
         menuView.layer.shadowOpacity = 1
         menuView.layer.shadowRadius = 6
