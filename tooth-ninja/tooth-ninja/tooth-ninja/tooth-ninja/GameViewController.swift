@@ -11,12 +11,42 @@ import SpriteKit
 
 class GameViewController: UIViewController
 {
+    
+    var menuShowing = false
+    
+    @IBOutlet var menuView: UIView!
+    @IBOutlet var leading: NSLayoutConstraint!
     @IBOutlet var health_bar: UIView!
     //var health_bar = SKpriteNode()
     //var health_bar = SKShapeNode(rectOf: CGSize(width: 300, height: 100))
+    @IBAction func openMenu(_ sender: Any)
+    {
+        print("TRIGGERED")
+        if(menuShowing)
+        {
+            leading.constant = -170
+        }
+        else
+        {
+            leading.constant = 0
+            
+            UIView.animate(withDuration: 0.3, animations:
+                {
+                    self.view.layoutIfNeeded()
+                })
+        }
+        menuShowing = !menuShowing
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        let longPressGestRecg = UILongPressGestureRecognizer(target: self, action: #selector(openMenu(press:)))
+        longPressGestRecg.minimumPressDuration = 3.0
+        
+        
+        menuView.layer.shadowOpacity = 1
+        menuView.layer.shadowRadius = 6
         let scene = GameScene(size: view.bounds.size)
         let skView = view as! SKView
         skView.showsFPS = true
@@ -49,6 +79,27 @@ class GameViewController: UIViewController
 ////        }
 //        //add it to the screem
 //        //scene.addChild(HealthBar)
+    }
+    func openMenu(press: UILongPressGestureRecognizer)
+    {
+        if press.state == .began
+        {
+            print("TRIGGERED")
+            if(menuShowing)
+            {
+                leading.constant = -170
+            }
+            else
+            {
+                leading.constant = 0
+                
+                UIView.animate(withDuration: 0.3, animations:
+                    {
+                        self.view.layoutIfNeeded()
+                })
+            }
+            menuShowing = !menuShowing
+        }
     }
     override var prefersStatusBarHidden: Bool
     {

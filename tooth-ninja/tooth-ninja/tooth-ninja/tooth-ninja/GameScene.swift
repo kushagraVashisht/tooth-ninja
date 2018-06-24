@@ -146,9 +146,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         print(health)
        if(health > 0)
        {
-            health -= 25
-        (self.view!.window!.rootViewController as! GameViewController).health_bar.frame.origin.x -= CGFloat(health)
-            print("Collision: Bacteria-Tooth")
+        //CHANGE THIS BACK ONCE FINISHED WITH THE MENU
+//            health -= 25
+//        (self.view!.window!.rootViewController as! GameViewController).health_bar.frame.origin.x -= CGFloat(health)
+//            print("Collision: Bacteria-Tooth")
             bacteria.removeFromParent()
             count += 1
         }
@@ -162,7 +163,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             let gameOverScene = GameOverScene(size: self.size, won: false)
             self.view?.presentScene(gameOverScene, transition: reveal)
 //            (self.view!.window!.rootViewController as! GameViewController).health_bar.isHidden = false
-            exit(1)
+            
+            //CHANGE THIS BACK ONCE FINISHED WITH THE MENU
+            //exit(1)
         }
     }
     
