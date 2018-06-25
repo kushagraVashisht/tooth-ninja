@@ -23,8 +23,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.0040508333530000001" blue="0.027970481089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5k-tk-JOK">
-                                <rect key="frame" x="0.0" y="64" width="160" height="603"/>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5k-tk-JOK">
+                                <rect key="frame" x="-160" y="20" width="160" height="647"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89F-0j-Jir">
                                         <rect key="frame" x="8" y="8" width="144" height="30"/>
@@ -48,6 +48,11 @@
                                     <constraint firstAttribute="trailing" secondItem="89F-0j-Jir" secondAttribute="trailing" constant="8" id="uL8-f1-xvF"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TKn-Tz-8zG">
+                                <rect key="frame" x="0.0" y="42" width="178" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -66,6 +71,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="health_bar" destination="Ar5-f3-lHg" id="ePZ-S1-jqo"/>
+                        <outlet property="hiddenView" destination="TKn-Tz-8zG" id="1eG-SZ-smV"/>
                         <outlet property="leading" destination="aNK-xz-8b2" id="z1q-Tr-DXP"/>
                         <outlet property="menuView" destination="u5k-tk-JOK" id="VDK-p7-FQ9"/>
                     </connections>
@@ -83,7 +89,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Works!" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUH-Cp-FTH">
-                                <rect key="frame" x="113" y="275" width="148" height="60"/>
+                                <rect key="frame" x="113" y="231" width="148" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="sKi-Jo-GL9"/>
                                 </constraints>
@@ -108,10 +114,9 @@
         <!--Navigation Controller-->
         <scene sceneID="ed1-tY-TVg">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IfZ-Gg-8rc" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="IfZ-Gg-8rc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="80u-YZ-kcC">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

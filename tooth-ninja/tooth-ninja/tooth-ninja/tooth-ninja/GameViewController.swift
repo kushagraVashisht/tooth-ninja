@@ -17,6 +17,8 @@ class GameViewController: UIViewController
     @IBOutlet var menuView: UIView!
     @IBOutlet var leading: NSLayoutConstraint!
     @IBOutlet var health_bar: UIView!
+    @IBOutlet var hiddenView: UIView!
+    
     //var health_bar = SKpriteNode()
     //var health_bar = SKShapeNode(rectOf: CGSize(width: 300, height: 100))
     @IBAction func openMenu(_ sender: Any)
@@ -42,8 +44,14 @@ class GameViewController: UIViewController
     {
         super.viewDidLoad()
         let longPressGestRecg = UILongPressGestureRecognizer(target: self, action: #selector(openMenu(press:)))
+        
+        // WHERE THE THING NEEDS TO BE ADDED
+        navigationController?.isNavigationBarHidden = true
+        
+        
         longPressGestRecg.minimumPressDuration = 3.0
-        menuView.addGestureRecognizer(longPressGestRecg)
+        // ADDING THE LONG GESTURE RECOGNIZER
+        hiddenView.addGestureRecognizer(longPressGestRecg)
         
         menuView.layer.shadowOpacity = 1
         menuView.layer.shadowRadius = 6
@@ -84,6 +92,7 @@ class GameViewController: UIViewController
     {
         if press.state == .began
         {
+            navigationController?.isNavigationBarHidden = false
             print("TRIGGERED")
             if(menuShowing)
             {
@@ -94,7 +103,7 @@ class GameViewController: UIViewController
                 leading.constant = 0
                 
                 UIView.animate(withDuration: 0.3, animations:
-                    {
+                {
                         self.view.layoutIfNeeded()
                 })
             }
