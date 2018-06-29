@@ -8,6 +8,7 @@
 
 import UIKit
 import SpriteKit
+import PaperOnboarding
 
 protocol Controller {
     func levelCompleted()
