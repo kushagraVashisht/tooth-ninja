@@ -1,15 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zib-Qo-RNl">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="Yl1-eT-Uhe">
+            <objects>
+                <viewController id="zib-Qo-RNl" customClass="GameViewController" customModule="tooth_ninja" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fuC-yw-lJ3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CkG-bu-HuQ" customClass="OnboardingView" customModule="tooth_ninja" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eF6-yC-Mky">
+                                <rect key="frame" x="121" y="313" width="133" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="GET STARTED">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="show" id="4B8-3j-wHc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1NQ-lc-TNh" firstAttribute="bottom" secondItem="CkG-bu-HuQ" secondAttribute="bottom" id="5Uo-Ry-0SZ"/>
+                            <constraint firstItem="CkG-bu-HuQ" firstAttribute="leading" secondItem="1NQ-lc-TNh" secondAttribute="leading" id="5oa-OO-JYw"/>
+                            <constraint firstItem="1NQ-lc-TNh" firstAttribute="trailing" secondItem="CkG-bu-HuQ" secondAttribute="trailing" id="FSe-5T-Ir8"/>
+                            <constraint firstItem="1NQ-lc-TNh" firstAttribute="top" secondItem="CkG-bu-HuQ" secondAttribute="top" constant="20" id="bhc-ek-Ogr"/>
+                            <constraint firstItem="1NQ-lc-TNh" firstAttribute="bottom" secondItem="CkG-bu-HuQ" secondAttribute="bottom" id="faD-Ra-q8N"/>
+                            <constraint firstItem="1NQ-lc-TNh" firstAttribute="top" secondItem="CkG-bu-HuQ" secondAttribute="top" constant="20" id="mjp-Mg-P8l"/>
+                            <constraint firstItem="1NQ-lc-TNh" firstAttribute="trailing" secondItem="CkG-bu-HuQ" secondAttribute="trailing" id="xCX-LM-uAL"/>
+                            <constraint firstItem="CkG-bu-HuQ" firstAttribute="leading" secondItem="1NQ-lc-TNh" secondAttribute="leading" id="yMb-TZ-uuq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1NQ-lc-TNh"/>
+                    </view>
+                    <connections>
+                        <outlet property="getStartedButton" destination="eF6-yC-Mky" id="AHE-g2-k6j"/>
+                        <outlet property="onboardingView" destination="CkG-bu-HuQ" id="ttJ-JG-so6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fyd-Vm-zTi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-618.39999999999998" y="145.27736131934034"/>
+        </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
@@ -23,6 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="225" y="194"/>
         </scene>
     </scenes>
 </document>

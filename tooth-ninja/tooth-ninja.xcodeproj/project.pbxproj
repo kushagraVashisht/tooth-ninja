@@ -23,6 +23,7 @@
 		CBC21DA8B0733628FFC51174 /* level_json_sample.json in Resources */ = {isa = PBXBuildFile; fileRef = CBC21BADC2F521CC644140E1 /* level_json_sample.json */; };
 		FD600BEC20E61762008A99A4 /* PaperOnboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD600BEB20E61762008A99A4 /* PaperOnboarding.framework */; };
 		FD600BED20E61762008A99A4 /* PaperOnboarding.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD600BEB20E61762008A99A4 /* PaperOnboarding.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD600BF220E61DBA008A99A4 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD600BF120E61DBA008A99A4 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +58,7 @@
 		CBC21D72AB6822F596C08DB1 /* GameObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		CBC21F80435DE8D0AEA45AA1 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		FD600BEB20E61762008A99A4 /* PaperOnboarding.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PaperOnboarding.framework; path = Carthage/Build/iOS/PaperOnboarding.framework; sourceTree = "<group>"; };
+		FD600BF120E61DBA008A99A4 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 		CBC2157E295711A85B6D6428 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FD600BF120E61DBA008A99A4 /* OnboardingView.swift */,
 				CBC21A9B5072EF82109B860B /* GameViewController.swift */,
 				CBC21199A292CDE54C19F27C /* GameOverScene.swift */,
 			);
@@ -234,6 +237,7 @@
 				CBC2159575622BA42A2CD228 /* GameScene.swift in Sources */,
 				CBC21A17987451CCD35B9BE1 /* GameViewController.swift in Sources */,
 				CBC217568D0CE41352C8BC30 /* GameOverScene.swift in Sources */,
+				FD600BF220E61DBA008A99A4 /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
