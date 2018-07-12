@@ -90,6 +90,7 @@ class GameViewController: UIViewController
     }
     func openMenu(press: UILongPressGestureRecognizer)
     {
+        var count = 0
         /*
         NEED TO FIX BUGS
             - WHEN WE NAVIGATE BACK TO THE MAIN GAME SCREEN, THE NAVIGATION BAR SHOULD BE HIDDEN
@@ -98,7 +99,7 @@ class GameViewController: UIViewController
         */
         if press.state == .began
         {
-            navigationController?.isNavigationBarHidden = false
+            count += 1
             print("TRIGGERED")
             if(menuShowing)
             {
@@ -107,13 +108,22 @@ class GameViewController: UIViewController
             else
             {
                 leading.constant = 0
-
+                count += 1
                 UIView.animate(withDuration: 0.3, animations:
                 {
                         self.view.layoutIfNeeded()
                 })
             }
             menuShowing = !menuShowing
+            if(count == 2)
+            {
+                navigationController?.isNavigationBarHidden = false
+            }
+            else
+            {
+                navigationController?.isNavigationBarHidden = true
+            }
+            print(count)
             //navigationController?.isNavigationBarHidden = true
         }
         
